@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  scope 'api' do
-    resources :ideas
-  end
+  resources :ideas
+  resources :static
 
   root 'home#index'
 

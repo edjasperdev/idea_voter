@@ -1,3 +1,5 @@
 IdeaVoter.Collections.Ideas = Backbone.Collection.extend({
-	url: '/api/ideas'
+	
+	model: IdeaVoter.Models.Idea, 
+	url: '/ideas'
 });
