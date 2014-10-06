@@ -2,32 +2,30 @@ class IdeasController < ApplicationController
 		respond_to :json
 
   def index
-  	respond_with(@ideas = Idea.all)
+  	respond_with Idea.all
   end
   
   def show
-  	respond_with(@idea = Idea.find(params[:id]))
+  	respond_with Idea.find(params[:id])
   end
 
   def create
-  	respond_with(@idea = Idea.create(params[:idea]))
+  	respond_with Idea.create(idea_params)
   end
 
 	def update
-		idea = ideas.find(params[:id])
-		idea.update_attributes(params[:idea])
-		respond_with(idea)
+		respond_with Idea.update(params[:id], idea_params)
 	end
 
 
 
   def destroy
-  	respond_with(@idea = Idea.destroy(params[:id]))
+  	respond_with Idea.destroy(params[:id])
   end
 
    private
     # permissible attributes.
-    def ideas_params
+    def idea_params
       params.require(:idea).permit(:title, :description, :vote)
     end
 
