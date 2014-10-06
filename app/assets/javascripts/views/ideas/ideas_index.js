@@ -5,6 +5,6 @@ IdeaVoter.Views.IdeasIndex = Backbone.View.extend({
 	},
 
 	renderTemplate: function() {
-    this.$el.html(JST['ideas/index'])
+    this.$el.html(HandlebarsTemplates['ideas/index'])
 	}
 });

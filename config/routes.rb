@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  scope 'api' do
+    resources :ideas
+  end
+
   root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

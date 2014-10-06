@@ -8,7 +8,6 @@ Bundler.require(*Rails.groups)
 
 module IdeaVoter
   class Application < Rails::Application
-    HandlebarsAssets::Config.template_namespace = 'JST'
     config.assets.initialize_on_precompile = false
   end
 end
