@@ -16,6 +16,8 @@
 //= require underscore
 //= require backbone
 //= require idea_voter
+//= require handlebars.runtime
+//= require handlebars
 //= require_tree ../templates
 //= require_tree ./models
 //= require_tree ./collections
