@@ -1,34 +1,3 @@
-<div class="container">
-    <div class="row">
-		<div class="well">
-        <h1 class="text-center">Idea Voter</h1> 
-
-        <h4 class="page-header">Contribute Your Ideas! Be Heard! Be Judged!</h4>
-                <form id="new_idea">
-                    <div class="form-group float-label-control">
-                        <label for="">Idea Title</label>
-                        <input type="text" id="new_idea_title" class="form-control" placeholder="Idea Title">
-                    </div>
-                    <div class="form-group float-label-control">
-                        <label for="">Your Name</label>
-                        <input type="text" id="new_idea_name" class="form-control" placeholder="Your Name">
-                    </div>
-                    <div class="form-group float-label-control">
-                        <label for="">Description</label>
-                        <textarea class="form-control" id="new_idea_description" placeholder="Description" rows="2"></textarea>
-                    </div>
-                    <input type="submit" value="Submit!" class="btn btn-default btn-lg btn"> </button>
-                </form>
-                <br>
-                <p id="ideas"> <p>
-        </div>
-         
-	</div>
-</div>
-
-
-<script>
-
 (function ($) {
     $.fn.floatLabels = function (options) {
 
@@ -104,4 +73,3 @@
         $('.float-label-control').floatLabels();
     });
 })(jQuery);
-</script>

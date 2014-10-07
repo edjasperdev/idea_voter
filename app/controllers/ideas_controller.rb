@@ -17,16 +17,15 @@ class IdeasController < ApplicationController
 		respond_with Idea.update(params[:id], idea_params)
 	end
 
-
-
   def destroy
   	respond_with Idea.destroy(params[:id])
   end
 
+
    private
     # permissible attributes.
     def idea_params
-      params.require(:idea).permit(:title, :description, :vote)
+      params.require(:idea).permit(:title, :description, :votes, :name)
     end
 
 end
