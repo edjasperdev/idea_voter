@@ -33,7 +33,7 @@ IdeaVoter.Views.IdeasIndex = Backbone.View.extend({
   createIdea: function(event){
   	event.preventDefault(),
   	password = prompt("In order to submit an idea, please enter the password.");
-  	if(password == "BK001"){ 
+  	if(password == "BK001" ||password == "Kindling"){ 
 	  	this.collection.create(
 		  	attributes = {
 		  	"title": $('#new_idea_title').val(),
