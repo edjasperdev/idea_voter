@@ -14,7 +14,6 @@ IdeaVoter.Views.IdeasIndex = Backbone.View.extend({
   render: function(){
     $(this.el).html(this.template())
     this.collection.each(this.addIdea)
-    this.collection.each(this.upvote)
     return this;
   },
 
@@ -23,8 +22,12 @@ IdeaVoter.Views.IdeasIndex = Backbone.View.extend({
   	$('#ideas').append(view.render().el)
   },
 
-  upvote:function(idea){
-  	idea.save()
+  upvote:function(event){
+  	alert("Thanks for the vote!");
+  	// event.preventDefault(),
+  	// idea = this.collection.get({model: idea}),
+  	// idea.set({'votes': idea.get('votes') + 1})
+  	// idea.save()
   },
 
   createIdea: function(event){
