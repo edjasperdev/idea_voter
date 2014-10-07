@@ -15,6 +15,9 @@ class IdeasController < ApplicationController
 
 	def update
 		respond_with Idea.update(params[:id], idea_params)
+    idea = Idea.find(params[:id])
+    idea.votes += 1
+    idea.save
 	end
 
   def destroy

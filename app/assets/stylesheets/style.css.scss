@@ -4,6 +4,7 @@
 //     background-image: url(./assets/images/idea_bg.jpg);
 // }
 
+
 a.list-group-item {
     height:auto;
     min-height:220px;
@@ -11,7 +12,10 @@ a.list-group-item {
 a.list-group-item.active small {
     color:#fff;
 }
-
+img.media-object {
+    max-width: 200px;
+    max-height: 200px;
+}
 
 
 // Form Sass

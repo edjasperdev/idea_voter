@@ -6,10 +6,6 @@ IdeaVoter.Models.Idea = Backbone.Model.extend({
         votes: 0
       }
     },
-		upvote: function(){
 
-		this.set({"votes": + 1}),
-		this.save();
-	}
 
 });
